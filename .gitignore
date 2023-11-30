@@ -6,9 +6,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-# Build your own Dockerfile ¯\_(ツ)_/¯
-Dockerfile
-
 ### STS ###
 .apt_generated
 .classpath
