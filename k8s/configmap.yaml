@@ -6,4 +6,4 @@ metadata:
   labels:
     app: [your-name]-configmap
 data:
-  db_url: jdbc:postgresql://[insert-ip-address]:5432/db
+  db_url: jdbc:postgresql://[insert-ip-address]:5432/db0
