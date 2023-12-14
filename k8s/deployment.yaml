@@ -19,22 +19,24 @@ spec:
     spec:
       containers:
         - name: [your-name]-app
-          image: [your-image]
+          image: riyanatshittu/my-k8s-masterclass-springboot-app:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           livenessProbe:
             httpGet:
-              path: /
-              port: 80
+              path: / # replace with /actuator/health once you connect to db
+              port: 8080
+            initialDelaySeconds: 60
           readinessProbe:
             httpGet:
-              path: /
-              port: 80
+              path: / # replace with /actuator/health once you connect to db
+              port: 8080
+            initialDelaySeconds: 60
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "25m"
+              memory: "256Mi"
+              cpu: "200m"
             limits:
-              memory: "128Mi"
-              cpu: "50m"
+              memory: "512Mi"
+              cpu: "250m"

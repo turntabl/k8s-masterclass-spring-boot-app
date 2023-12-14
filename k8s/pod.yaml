@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: [your-image]
+      image: riyanatshittu/my-k8s-masterclass-springboot-app:latest
       imagePullPolicy: Always
       ports:
         - containerPort: 8080
